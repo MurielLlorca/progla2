@@ -7,13 +7,13 @@ struct Person{
 int main()
 {
 	Person person;
-	cout << "toes";
+	cout << "Toes: ";
 	cin >> person.toes;
-	cout << "knees";
+	cout << "Knees: ";
 	cin >> person.knees;
-	cout << "shoulder";
+	cout << "Shoulder: ";
 	cin >> person.shoulder;
-	cout << "head";
+	cout << "Head: ";
 	cin >> person.head;
 	
 	cout << person.toes << endl;
