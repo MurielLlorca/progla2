@@ -9,11 +9,12 @@ struct Person{
 void newLine();
 int main()
 {
-	Person person[4];
+	Person person[5];
 	int i;
 	
-	for (i=0;i<4;i++)
+	for (i=0;i<5;i++)
 	{
+	cout << "Person " << i+1 <<endl;
 	cout << "toes: ";
 	cin >> person[i].toes;
 	cout << "knees: ";
@@ -22,13 +23,16 @@ int main()
 	cin >> person[i].shoulder;
 	cout << "head: ";
 	cin >> person[i].head;
+	cout<<endl;
 	}
-	for (i=0;i<4;i++)
+	for (i=0;i<5;i++)
 	{
+	cout << "Person " << i+1 <<endl;
 	cout << "Toes: " << person[i].toes << endl;
 	cout << "Knees: " << person[i].knees << endl;
 	cout << "Shoulder: " << person[i].shoulder << endl;
-	cout << "Head: " << person[i].head << endl;
+	cout << "Head: " << person[i].head;
+	cout<<endl;
 	}
 	return 0;
 }
