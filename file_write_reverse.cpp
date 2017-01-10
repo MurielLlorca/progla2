@@ -19,12 +19,6 @@ int main(){
 	{
 		cout << lol[i] <<endl;
 	}
-	fclose(fp);
-	fp = fopen("sample1.txt", "w");
-	for (int i=0; i<5; i++){
-		cout << fp << lol[i];
-	}
-	
 	system ("pause");
     return 0;
 }
