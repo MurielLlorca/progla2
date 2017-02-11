@@ -1,29 +1,29 @@
 #include <iostream>
 #include<string>
 using namespace std;
-class user{
+class User{
 	public:
 		string name;
 		int id_num;
 };
-class student : public user{
+class Student : public User{
 	public:
 		int subject;
 		int books;
 
 };
-class professor : public user{
+class Professor : public User{
 	public:
 		int tin;
 };
-class staff : public user{
+class Staff : public User{
 	public:
 		int sss;
 };
 int main(){
-		student stud;
-		professor prof;
-		staff Staff;
+		Student stud;
+		Professor prof;
+		Staff staff;
 		cout << "Student Name: ";
 		cin >> stud.name;
 		cout << "Input id num: ";
@@ -43,11 +43,11 @@ int main(){
 		cout<<endl;
 		
 		cout << "Staff Name: ";
-		cin >> Staff.name;
+		cin >> staff.name;
 		cout << "ID Number: ";
-		cin >> Staff.id_num;
+		cin >> staff.id_num;
 		cout << "SSS: ";
-		cin >> Staff.sss;
+		cin >> staff.sss;
 		
 		cout<<endl<<endl;
 		cout <<"Name of student: " <<  stud.name <<endl;
@@ -59,7 +59,7 @@ int main(){
 		cout << "ID Num: " <<  prof.id_num<<endl;
 		cout << "Tin: " <<  prof.tin<<endl<<endl;
 		
-		cout <<"Staff Name: " <<  Staff.name <<endl;
-		cout << "ID Num: " <<  Staff.id_num<<endl;
-		cout << "SSS: " <<  Staff.sss;
+		cout <<"Staff Name: " <<  staff.name <<endl;
+		cout << "ID Num: " <<  staff.id_num<<endl;
+		cout << "SSS: " <<  staff.sss;
 }
