@@ -1,30 +1,30 @@
 #include <iostream>
 #include<string>
 using namespace std;
-class user{
+class User{
 	public:
 		string name;
 		int id_num;
 };
-class student : public user{
+class Student : public User{
 	public:
 		int subject;
 		int books;
 	
 };
-class professor : public user{
+class Professor : public User{
 	public:
 		int id_num;
 		int tin;
 };
-class staff : public user{
+class Staff : public User{
 	public:
 		int sss;
 };
 int main(){
-	student stud[3];
-	professor prof[3];
-	staff Staff[3];
+	Student stud[3];
+	Professor prof[3];
+	Staff staff[3];
 	
 	for(int i=0; i<3; i++){
 		cout << "Student Name: ";
@@ -46,27 +46,30 @@ int main(){
 		cout << endl;
     
 		cout << "Staff Name: ";
-		cin >> Staff[i].name;
+		cin >> staff[i].name;
 		cout << "ID Number: ";
-		cin >> Staff[i].id_num;
+		cin >> staff[i].id_num;
 		cout << "SSS: ";
-		cin >> Staff[i].sss;
+		cin >> staff[i].sss;
 		cout << endl;
 	}
 	
 	cout << endl;
 	for (int i=0; i<3; i++){
-		cout << i+1 << "Name of student: " <<  stud[i].name <<endl;
-		cout << "ID Num: " <<  stud[i].id_num<<endl;
-		cout << "Number of subject: " <<  stud[i].subject << endl;
-		cout << "Number of books: " <<  stud[i].books;
+		cout << i+1<<" "<< "Name of student: " <<stud[i].name << endl;
+		cout << "ID Num: " <<stud[i].id_num << endl;
+		cout << "Number of subject: " <<stud[i].subject << endl;
+		cout << "Number of books: " <<stud[i].books << endl;
+		cout <<endl;
 		
-		cout << i+1 << "Professor Name: " <<  prof[i].name <<endl;
-		cout << "ID Num: " <<  prof[i].id_num<<endl;
-		cout << "Tin: " <<  prof[i].tin;
+		cout << i+1 << " " << "Professor Name: " <<prof[i].name << endl;
+		cout << "ID Num: " <<prof[i].id_num << endl;
+		cout << "Tin: " <<prof[i].tin << endl;
+		cout << endl;
 		
-		cout << i+1 << "Staff Name: " <<  Staff[i].name <<endl;
-		cout << "ID Num: " <<  Staff[i].id_num<<endl;
-		cout << "SSS: " <<  Staff[i].sss;
+		cout << i+1 << " " << "Staff Name: " <<staff[i].name << endl;
+		cout << "ID Num: " <<staff[i].id_num << endl;
+		cout << "SSS: " <<staff[i].sss << endl;
+		cout << endl;
 	}
 }
