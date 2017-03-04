@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+class User{
+	public:
+		string name;
+		int age;
+	
+	private:
+		int stud_num;
+};
+class Student : public User{
+	public:
+		string name;
+		int age;
+};
+class Professor : public User{
+	private:
+		int stud_num;
+};
+int main(){
+	Student stud[2];
+	
+}
+
+#include <iostream>
+using namespace std;
+class User{
+	int 
+};
+int main(){
+	int a;
+	cout << "Menu\n";
+	cout << "Enter number: ";
+	cout << "1 - Input Record";
+	cout << "2 - Display Records";
+	cout << "3 - Search";
+	cin >> a;
+	
+
+	
+	
+}
